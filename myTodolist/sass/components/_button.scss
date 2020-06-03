@@ -1,0 +1,27 @@
+.btn{
+    border:none;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem 4rem;
+    font-size:1.6rem;
+    font-weight: 400;
+    color:white;
+    background-color:green;
+    margin:0 auto ;
+
+    &:hover {
+      cursor: pointer;
+      background-color: pink;
+    }
+
+
+}
+
+.add-input{
+   height:4.6rem;
+   width:30rem;
+   margin-right:2rem;
+   font-size: large;
+   margin-bottom:3rem;
+}

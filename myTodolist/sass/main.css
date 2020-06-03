@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "Lato",sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+}
+
+.u-padding-top-small {
+  padding-top: 3rem;
+}
+
+.u-margin-top-medium {
+  margin-top: 3rem;
+}
+
+.heading-primary {
+  font-size: 3.5rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: white;
+  background-color: green;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: pink;
+}
+
+.add-input {
+  height: 4.6rem;
+  width: 30rem;
+  margin-right: 2rem;
+  font-size: large;
+  margin-bottom: 3rem;
+}
+
+header {
+  background-color: #e7e7e7;
+}
+
+.section-todoList__add {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

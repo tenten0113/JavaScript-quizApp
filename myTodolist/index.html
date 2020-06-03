@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./sass/main.css">
+</head>
+<body>
+  <div id="container">
+    <header class ="header">
+      <h1 class= "heading-primary u-padding-top-small">
+        To do List
+      </h1>
+    </header>
+    <main>
+      <section class ="section-todoList  u-margin-top-medium">
+        <div class="section-todoList__add">
+          <label for="item" type = "check"></label>
+          <input  class ="add-input" type="text" id="item" placeholder="what is your to do?">
+          <button  class ="btn" type="button" onClick="submitItem();">Add</button>
+        </div>
+        <ul  class ="section-todoList__addList" id="todoList">
+          <li></li>
+        </ul>
+
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+  </div>
+
+  <script src ="/js/main.js"></script>
+</body>
+</html>

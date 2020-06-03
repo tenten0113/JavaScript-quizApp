@@ -2,6 +2,11 @@
 {
 /*
 問題文を定義し、クイズと選択肢を追加する
+
+
+ボタンはグレー
+/////////////（true/falseで分岐↑↓）
+nextボタンが青くなる
 */ 
 
   //再代入を必要とない変数を宣言し、取得する
@@ -56,15 +61,17 @@
   
   //リストを追加し、問題文の選択肢を一つずつリストに書き出す処理
   function setQuiz() {
-    isAnswered = false;
-    question.textContent = quizSet[currentNum].q;
+    isAnswered = false; //副作用
 
+    question.textContent = quizSet[currentNum].q;
+    //副作用-----------------
     while(choices.firstChild){
      choices.removeChild(choices.firstChild);
     }
+    //----------------------
     
+    //処理
     const shuffledChoices = shuffle([...quizSet[currentNum].c]);
-    
     shuffledChoices.forEach(choice => {
     const li = document.createElement('li');
     li.textContent = choice;
@@ -72,10 +79,10 @@
     li.addEventListener('click', () => {
      checkAnswer(li);
     });
-    choices.appendChild(li);
+    choices.appendChild(li);//出力
   });
 
-  if(currentNum === quizSet.length -1){
+  if(currentNum === quizSet.length -1){//処理
     btn.textContent = 'Show Score';
   }
 }
